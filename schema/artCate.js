@@ -21,11 +21,20 @@ const delArtCate = {
 }
 
 const qryArtCate = {
-        params: {
-            id
+    params: {
+        id
+    }
+}
+
+const updArtCate = {
+        body: {
+            Id: id,
+            name,
+            alias
         }
     }
     // 对外暴露规则对象
 module.exports.addArtCate = addArtCate;
 module.exports.delArtCate = delArtCate;
 module.exports.qryArtCate = qryArtCate;
+module.exports.updArtCate = updArtCate;
